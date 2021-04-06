@@ -3,8 +3,11 @@
 //   counting with the extra space that separates
 //   both names
 
-const fullNameLength = () => {
-  
+const fullNameLength = (name, surname) => {
+  //return name.length + surname.length;
+  const fullname = `${name} ${surname}`; // pas de guillemets à name et surname
+  //console.log(fullname);
+  return fullname.length;
 };
 
 console.log(fullNameLength("bob", "smith"));
